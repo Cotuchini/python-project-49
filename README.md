@@ -5,3 +5,9 @@
 
 Brain-even:
 [![asciicast](https://asciinema.org/a/Z9aIIRxHJcnIFM3Ts12AhYLX7.svg)](https://asciinema.org/a/Z9aIIRxHJcnIFM3Ts12AhYLX7)
+
+Brain-calc:
+[![asciicast](https://asciinema.org/a/IOYh2iMUxRFoBFdUxbTytwGcm.svg)](https://asciinema.org/a/IOYh2iMUxRFoBFdUxbTytwGcm)
+
+Brain-gcd:
+[![asciicast](https://asciinema.org/a/zKhgzFH1rxFvYLZ9WaIrNFFMJ.svg)](https://asciinema.org/a/zKhgzFH1rxFvYLZ9WaIrNFFMJ)
