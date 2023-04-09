@@ -1,26 +1,26 @@
-from random import randint
+
+from random import choice, randint
 from brain_games.major import major
 
-rule = "What number is missing in the progression?"
+rule = 'What number is missing in the progression?'
 
-
-def progress():
-  start_num = randint(0, 80)
-  step = randint(1, 20)
-  sequence = []
-  for i in range(10):
-    sequence.append(start_num+i*step)
-  return sequence
+def make_progression():
+    initial_number = randint(1, 100)
+    delta = randint(1, 25)
+    length = 10
+    maximum_number = (delta * length) + initial_number
+    return range(initial_number, maximum_number, delta)
 
 
 def quest_func():
-    miss_item_index = randint(1, 10)
-    order = progress()
-    answer = order.pop(miss_item_index)
-    order.insert(miss_item_index, "..")
-    question = " ".join([str(i) for i in order])
-    return question, str(answer)
-
+    prog = make_progression()
+    secret = choice(prog)
+    progression = ' '.join([
+        '..' if num == secret else str(num) for num in prog
+    ])
+    question = f'Question: {progression}'
+    return (question, str(secret))
 
 def run_game():
     major(quest_func, rule)
+
