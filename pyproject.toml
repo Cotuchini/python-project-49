@@ -3,9 +3,14 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "Hexlet First Project"
 authors = ["Igor Krasnov <igor.krasnov31@yandex.ru>"]
+repository = "https://github.com/Cotuchini/python-project-49"
 readme = "README.md"
 packages = [
   { include = "brain_games" },
+]
+
+classifiers = [
+    "Topic :: Education"
 ]
 
 [tool.poetry.dependencies]
