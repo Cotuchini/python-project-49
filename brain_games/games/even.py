@@ -1,7 +1,7 @@
 from random import randint
 from brain_games.major import major
 
-rule = 'Answer "yes" if number even otherwise answer "no".'
+rule = 'Answer "yes" if number even, otherwise answer "no".'
 
 def is_even(number):
     return number % 2 == 0
