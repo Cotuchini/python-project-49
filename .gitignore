@@ -1,4 +1,9 @@
-.venv/
+*.egg-info
+__pycache__
 dist/
-__pycache__/
-.DS_Store
+*.pyc
+.venv/
+.coverage
+coverage.xml
+.pytest_cache/
+.vim
