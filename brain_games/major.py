@@ -1,4 +1,3 @@
-from random import randint
 import prompt
 
 num_attempts = 3
