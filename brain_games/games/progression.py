@@ -4,6 +4,7 @@ from brain_games.major import major
 
 rule = 'What number is missing in the progression?'
 
+
 def make_progression():
     initial_number = randint(1, 100)
     delta = randint(1, 25)
@@ -21,6 +22,6 @@ def quest_func():
     question = f'Question: {progression}'
     return (question, str(secret))
 
+
 def run_game():
     major(quest_func, rule)
-

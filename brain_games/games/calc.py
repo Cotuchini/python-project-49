@@ -21,7 +21,7 @@ def quest_func():
     answer = calculating(num1, num2, operator)
     question = "{} {} {}".format(num1, operator, num2)
     return question, str(answer)
-    
+
 
 def run_game():
     major(quest_func, rule)
