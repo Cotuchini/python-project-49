@@ -8,7 +8,6 @@ def start_game(game):
     user_name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(user_name))
     print(game.RULE)
-    
     for i in range(NUM_ATTEMPTS):
         question, correct_answer = game.get_game()
         print("Question: {}".format(question))

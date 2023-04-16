@@ -1,4 +1,5 @@
-package-update: build publish package-install
+package-update:
+	build publish package-install
 
 install:
 	poetry install
