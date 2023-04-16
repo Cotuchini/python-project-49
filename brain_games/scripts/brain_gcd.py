@@ -1,8 +1,9 @@
+from brain_games.game_launcher import start_game
 from brain_games.games import gcd
 
 
 def main():
-    gcd.run_game()
+    start_game(gcd)
 
 
 if __name__ == "__name__":

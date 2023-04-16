@@ -1,15 +1,16 @@
 import prompt
 
-num_attempts = 3
+NUM_ATTEMPTS = 3
 
 
-def major(quest_func, rule):
+def start_game(game):
     print('Welcome to the Brain Games!')
-    user_name = prompt.string("May I have your name? ")
-    print("Hello, {}!".format(user_name))
-    print(rule)
-    for i in range(num_attempts):
-        question, correct_answer = quest_func()
+    user_name = prompt.string('May I have your name? ')
+    print('Hello, {}!'.format(user_name))
+    print(game.RULE)
+    
+    for i in range(NUM_ATTEMPTS):
+        question, correct_answer = game.get_game()
         print("Question: {}".format(question))
         user_answer = prompt.string("Your answer: ")
         if correct_answer == user_answer:
